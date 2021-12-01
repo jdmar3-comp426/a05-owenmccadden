@@ -1,0 +1,87 @@
+/* style h1 to have a fancy font and blue color */
+/* center the h1 elements */
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: blue;
+  text-align: center;
+}
+
+/* style the form inputs to look professional */
+/* style the form inputs to have shadowing effects */
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+/* style the form labels to look professional and centered and larger text */
+label {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+}
+
+/* style the submit button to look professional, have shadowing effects and hover effects */
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* style the button to change color on hover */
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+/* style the button to have a loading wheel when pressed */
+input[type=button]:active {
+  background-color: #45a049;
+  transform: translateY(4px);
+}
+
+/* add spacing around the element with id "get_users" and change the background color  */
+#get_users {
+  margin-top: 100px;
+  background-color: #4CAF50;
+  width: 50%;
+  /* center the elemetn */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* add media queries to make the page responsive for all screen sizes */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 18px;
+  }
+  label {
+    font-size: 14px;
+  }
+}

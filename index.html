@@ -1,0 +1,26 @@
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>a05</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <!-- create a header that says A05 in a fancy font in blue -->
+        <h1>A05</h1>
+        <!-- Create a form that takes in a username, password, and  email  -->
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <!-- on click, call the send_form function and pass the values stored in the username, password, and email form inputs -->
+            <input type="button" value="Submit" onclick="send_form(document.getElementById('username').value, document.getElementById('password').value, document.getElementById('email').value)">
+        </form>
+
+        <!-- create a button to call get_users on click -->
+        <input id="get_users"type="button" value="Get Users" onclick="get_users()">
+    </body>
+</html>
